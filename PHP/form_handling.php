@@ -7,6 +7,7 @@
 </head>
 <body>
 
+
 <?php
 // Initialize a variable to store error messages
 $err = '';
@@ -18,7 +19,7 @@ if (isset($_POST['fname']) && isset($_POST['email'])) {
     $mail = $_POST['email'];
     
     // Check if the 'name' field is empty and 'email' is set
-    if (empty($name) && isset($mail)) {
+    if (empty ($name) && empty($mail)) {
         // Display an error message if the name is empty
         echo "Fill up all the fields";
         $err = "Fill up the field"; // Store the error message in the $err variable
