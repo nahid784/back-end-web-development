@@ -8,37 +8,48 @@
 <body>
 <?php
 
-// arithmethic operator
-    $a = 4;
-    $b = 2;
+// Arithmetic operators
+    $a = 4; // Initialize variable $a with value 4
+    $b = 2; // Initialize variable $b with value 2
 
-    $add = $a + $b;
-    $sub = $a - $b;
-    $mod = $a % $b; //modulas
-    echo"Addition is $add";
+    $add = $a + $b; // Addition
+    $sub = $a - $b; // Subtraction
+    $mod = $a % $b; // Modulus (remainder of division)
+    echo "Addition is $add"; // Display addition result
     echo "<br>"; 
-    echo"Subtraction is $sub";
+    echo "Subtraction is $sub"; // Display subtraction result
     echo "<br>"; 
-    echo"Modulas is $mod";
+    echo "Modulus is $mod"; // Display modulus result
     echo "<br>"; 
 
-    // for showing the value datatype
-    var_dump ($add);
+    // Displaying the datatype of the results using var_dump
+    var_dump($add); // Show datatype of $add
     echo "<br>";
-    var_dump ($sub);
-    echo "<br>";
-
-    $a++;
-    echo "increament addition is $a";
+    var_dump($sub); // Show datatype of $sub
     echo "<br>";
 
-    // assignment operator
-    $a+=5;
-    $b*=5;
-    // $a = $a + 5; actual meaning
-    echo "addition is $a";
+    // Increment operator
+    $a++; // Increment $a by 1
+    echo "Incremented addition is $a"; // Display incremented value of $a
     echo "<br>";
-    echo "multiplication is $b";
+
+    // Assignment operators
+    $a += 5; // Add 5 to $a and assign the result to $a
+    $b *= 5; // Multiply $b by 5 and assign the result to $b
+    // The equivalent of $a = $a + 5 and $b = $b * 5
+    echo "Addition after assignment is $a"; // Display updated value of $a
+    echo "<br>";
+    echo "Multiplication after assignment is $b"; // Display updated value of $b
+
+    echo "<br>";
+
+    // Logical operators
+    if ($a || $b) { // Check if either $a or $b is true (non-zero)
+        echo "true"; // If either is true, output "true"
+    } else {
+        echo "false"; // If both are false (zero), output "false"
+    }
+
 ?>
 </body>
 </html>
